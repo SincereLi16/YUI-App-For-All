@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 288" fill="none">
+  <title>Complete bedside cabinet with plant and geometric bed; product space left empty</title>
+  <!-- Every object is contained inside the shared card-width composition. -->
+  <!-- Two soft upholstered forms with a quiet seam and short exposed feet. -->
+  <rect x="232" y="243" width="9" height="20" rx="4.5" fill="#CDBB9D"/>
+  <path d="M250 108h69v65h-69a25 25 0 0 1-25-25v-15a25 25 0 0 1 25-25Z" fill="#FFFDF8"/>
+  <path d="M230 161h89v88h-89a20 20 0 0 1-20-20v-48a20 20 0 0 1 20-20Z" fill="#F8F4EA"/>
+  <!-- A small sleeping cat rests on the front bedding, inside the scene edge. -->
+  <g aria-label="蜷着睡觉的小猫">
+    <ellipse cx="274" cy="173" rx="28" ry="3" fill="#E6DFD3"/>
+    <path d="M260 169c-4-6-2-17 6-22 9-6 24-4 30 4 5 6 5 14 1 18-6 6-28 7-37 0Z" fill="#B7A99A"/>
+    <path d="M294 158c9 14-17 17-26 11" stroke="#9D8C7D" stroke-width="7" stroke-linecap="round"/>
+    <g class="scene-cat-head">
+    <path d="m247 149 1-8q0-2 2-1l6 5m8 0 6-5q2-1 2 1l1 9" fill="#C8BCAF"/>
+    <ellipse cx="259" cy="156" rx="16" ry="14" fill="#C8BCAF"/>
+    <path d="m250 143 1 5 3-2-4-3Zm20 0-4 3 3 2 1-5Z" fill="#DCC8BB"/>
+    <path d="M251 157q2 2 4 0m8 0q2 2 4 0" stroke="#76685D" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="m258 162 2 2 2-2" fill="#9D8174"/>
+    </g>
+  </g>
+  <g stroke="#A89783" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path class="scene-sleep-z" d="M259 130h5l-5 5h5"/>
+  </g>
+  <!-- Nightstand: open niche over one rounded drawer, no wood texture. -->
+  <rect x="13" y="246" width="10" height="17" rx="5" fill="#CDBB9D"/>
+  <rect x="176" y="246" width="10" height="17" rx="5" fill="#CDBB9D"/>
+  <rect x="7" y="147" width="185" height="105" rx="12" fill="#DDCBAE"/>
+  <rect x="20" y="160" width="159" height="35" rx="7" fill="#C7B394"/>
+  <rect x="85" y="175.5" width="29" height="4" rx="2" fill="#EDE1CB"/>
+  <rect x="20" y="204" width="159" height="38" rx="8" fill="#EDE1CB"/>
+  <rect x="85" y="219" width="29" height="4" rx="2" fill="#BEAA88"/>
+  <rect x="1" y="140" width="197" height="12" rx="6" fill="#D2BE9C"/>
+  <!-- Small plant on the left; right half of cabinet reserved for S601. -->
+  <g transform="translate(-6 0)">
+  <g class="scene-leaves scene-leaves-601">
+  <path d="M53 119 48 69m5 40 17-23m-19 15L32 85" stroke="#7F967C" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="47" cy="69" rx="9" ry="10" fill="#90AA91"/>
+  <ellipse cx="38" cy="87" rx="10" ry="7" transform="rotate(25 38 87)" fill="#ADC1A6"/>
+  <ellipse cx="57" cy="88" rx="10" ry="7" transform="rotate(-30 57 88)" fill="#809F83"/>
+  <ellipse cx="71" cy="84" rx="8" ry="9" fill="#A2B89C"/>
+  <ellipse cx="65" cy="103" rx="10" ry="7" transform="rotate(-20 65 103)" fill="#90AA91"/>
+  <ellipse cx="30" cy="83" rx="8" ry="7" fill="#90AA91"/>
+  </g>
+  <path d="M36 115h35l-3 19a6 6 0 0 1-6 6H45a6 6 0 0 1-6-6l-3-19Z" fill="#E8D2B7"/>
+  <rect x="35" y="113" width="37" height="5" rx="2.5" fill="#D5BC9E"/>
+  </g>
+</svg>

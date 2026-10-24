@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="YUI App V0.3.1 unified visual prototype" />
+    <title>YUI App · V0.3.1 Unified Visual Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:opsz,wght@8..144,300..800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/device-products.css?v=46" />
+    <link rel="stylesheet" href="./css/wireframe.css?v=s601-icons-2" />
+    <link rel="stylesheet" href="./css/s602-home.css?v=30" />
+    <link rel="stylesheet" href="./css/about.css?v=3" />
+  </head>
+  <body>
+    <div class="prototype-shell">
+      <header class="workbench-header">
+        <div class="brand-lockup">
+          <span class="brand-mark" aria-hidden="true">Y</span>
+          <div>
+            <strong>YUI App Prototype</strong>
+            <span>V0.3.1 · Unified visual</span>
+          </div>
+        </div>
+        <div class="header-actions">
+          <span class="mode-pill">低密度 × 大色块</span>
+          <button class="language-toggle" id="language-toggle" type="button" aria-label="切换为中文">中文</button>
+          <button class="quiet-button" id="reset-prototype" type="button">重置原型</button>
+        </div>
+      </header>
+
+      <main class="workbench">
+        <aside class="screen-tree" aria-label="页面关系树">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">结构</span>
+              <h1>页面关系树</h1>
+            </div>
+            <span class="screen-count" id="screen-count"></span>
+          </div>
+          <nav id="tree-nav" aria-label="原型页面"></nav>
+        </aside>
+
+        <section class="preview-stage" aria-label="手机界面预览">
+          <div class="stage-toolbar">
+            <div>
+              <span class="eyebrow">Interactive preview</span>
+              <strong id="preview-title">My Devices</strong>
+            </div>
+            <div class="route-label" id="route-label">#/devices</div>
+          </div>
+
+          <div class="phone-frame">
+            <div class="phone-speaker" aria-hidden="true"></div>
+            <div class="phone-screen" id="phone-screen" aria-live="polite"></div>
+            <div class="phone-home" aria-hidden="true"></div>
+          </div>
+        </section>
+
+        <aside class="screen-inspector" aria-label="页面说明">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">说明</span>
+              <h2>页面说明</h2>
+            </div>
+          </div>
+
+          <section class="inspector-block">
+            <span class="inspector-label">页面目标</span>
+            <p id="screen-purpose"></p>
+          </section>
+
+          <section class="inspector-block">
+            <span class="inspector-label">用户从这里来</span>
+            <p id="screen-entry"></p>
+          </section>
+
+          <section class="inspector-block">
+            <span class="inspector-label">主要去向</span>
+            <div class="tag-list" id="screen-exits"></div>
+          </section>
+
+          <section class="inspector-block">
+            <span class="inspector-label">交互事件（非 API 定义）</span>
+            <div class="code-list" id="screen-events"></div>
+          </section>
+
+          <section class="inspector-block"><span class="inspector-label">进入条件 · 正式接入</span><p id="handoff-conditions"></p></section>
+          <section class="inspector-block"><span class="inspector-label">操作与结果 · 正式接入</span><p id="handoff-behavior"></p></section>
+          <section class="inspector-block"><span class="inspector-label">异常与待确认</span><p id="handoff-exceptions"></p></section>
+          <section class="inspector-block"><span class="inspector-label">原型模拟边界</span><p id="handoff-demo"></p></section>
+          <section class="inspector-block"><span class="inspector-label">交付基线</span><p>PRD v0.2 + 状态与事件对接表 v0.2。事件名仅为语义；真实协议、超时与字段需工程评审。</p></section>
+          <section class="inspector-block event-log-block">
+            <div class="inspector-row">
+              <span class="inspector-label">交互日志</span>
+              <button class="text-button" id="clear-log" type="button">清空</button>
+            </div>
+            <ol class="event-log" id="event-log"></ol>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <script src="./js/screens.js?v=about-1"></script>
+    <script src="./js/handoff.js?v=1"></script>
+    <script src="./js/confetti.browser.min.js?v=1.9.4"></script>
+    <script src="./js/app.js?v=handoff-1"></script>
+  </body>
+</html>

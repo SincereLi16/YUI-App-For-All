@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 288" fill="none">
+  <title>Front-facing bedside scene study without product</title>
+  <!-- Transparent wall: the page itself is the background. -->
+  <!-- Bedding enters only from the right, continuing beyond the crop. -->
+  <path d="M325 215h35v73H270l8-36c5-24 19-37 47-37Z" fill="#F8F4EA"/>
+  <path d="m311 87 29-12 20 2v135l-40 8-18-10 10-21-4-43-24-20 27-39Z" fill="#FFFDF8"/>
+  <path d="m311 87-10 35 17 18-10 6-24-20 27-39Z" fill="#EFE8DB"/>
+  <path d="m320 220 19-7 21-1v10h-35l-23-12 10-21 8 31Z" fill="#EDE5D6"/>
+  <path d="M292 251c7-15 17-21 28-24M309 260c4-14 8-22 15-28" stroke="#ECE5D9" stroke-width="3" stroke-linecap="round"/>
+  <!-- Empty bedside cabinet, cropped at left and bottom like the reference. -->
+  <rect x="-16" y="196" width="212" height="109" rx="15" fill="#D8C9AE"/>
+  <rect x="-14" y="190" width="216" height="12" rx="6" fill="#CDBB9D"/>
+  <rect x="-12" y="212" width="192" height="59" rx="10" fill="#E5D9C3"/>
+  <rect x="76" y="231" width="27" height="4" rx="2" fill="#BEAD8E"/>
+</svg>

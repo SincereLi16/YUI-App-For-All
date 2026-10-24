@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 288" fill="none">
+  <title>Minimal desktop scene, left foreground reserved for N86</title>
+  <rect x="18" y="229" width="10" height="40" rx="5" fill="#CEBC9E"/>
+  <rect x="292" y="229" width="10" height="40" rx="5" fill="#CEBC9E"/>
+  <rect x="1" y="209" width="318" height="24" rx="9" fill="#D9C6A8"/>
+  <rect x="1" y="201" width="318" height="17" rx="8.5" fill="#E8D9BF"/>
+  <path d="M184 164h21l4 32h-29l4-32Z" fill="#B5B8AC"/>
+  <rect x="162" y="193" width="65" height="8" rx="4" fill="#C4C8BD"/>
+  <rect x="86" y="39" width="220" height="132" rx="10" fill="#858F80"/>
+  <rect x="92" y="45" width="208" height="113" rx="5" fill="#DCE4D4"/>
+  <g transform="translate(0 -10)">
+  <path d="M115 151c-10-39 19-74 64-78-1 41-24 72-64 78Z" fill="#A6B99A"/>
+  <path d="M177 151c-4-39 27-72 76-72-5 42-32 70-76 72Z" fill="#BACBAE"/>
+  <path d="M239 152c-2-28 18-48 46-51-1 29-18 49-46 51Z" fill="#8FA886"/>
+  </g>
+  <circle cx="196" cy="164" r="2" fill="#DCE4D4"/>
+  <rect x="109" y="210" width="149" height="18" rx="5" fill="#C4C4B9"/>
+  <rect x="112" y="208" width="143" height="16" rx="4" fill="#F7F4EC"/>
+  <path d="M119 213h125M121 218h19m5 0h67m5 0h25" stroke="#DAD8CD" stroke-width="3" stroke-linecap="round"/>
+</svg>

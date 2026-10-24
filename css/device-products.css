@@ -1,0 +1,457 @@
+.device-list-stack .device-tile-media {
+  display: grid;
+  place-items: center;
+  overflow: visible;
+  border-radius: 0;
+  background: transparent;
+}
+
+.device-list-stack .round-device .device-tile-media {
+  border-radius: 0;
+}
+
+.device-list-stack .device-tile-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.12);
+  transform-origin: center;
+}
+
+.device-list-stack .device-tile-media img[src*="n86-"] {
+  transform: scale(1.35);
+}
+
+.device-list-stack .device-tile-media img[src*="s602-shape"] {
+  transform: scale(1.25);
+}
+
+.phone-screen .device-list-stack .connection-control {
+  width: auto;
+  margin-left: auto;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.phone-screen .device-list-stack .device-tile {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  min-height: 136px;
+  padding: 14px 16px;
+  column-gap: 12px;
+  border-radius: 34px;
+  background: #f1e8de;
+}
+
+.phone-screen .device-list-stack .device-open {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  grid-template-rows: 106px;
+  align-items: center;
+  min-height: 106px;
+  gap: 16px;
+}
+
+.phone-screen .device-list-stack .device-tile-media {
+  width: 92px;
+  height: 106px;
+}
+
+.phone-screen .device-list-stack .device-tile-heading {
+  align-self: center;
+  padding: 0;
+}
+
+.phone-screen .device-list-stack .device-tile-footer {
+  position: static;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  align-self: center;
+  width: auto;
+  padding: 0;
+}
+
+.phone-screen .empty-state .flat-light-art {
+  position: relative;
+  isolation: isolate;
+  width: 230px;
+  height: 180px;
+  margin-bottom: 56px;
+  overflow: visible;
+}
+
+.phone-screen .flat-light-art::before {
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  left: 8px;
+  display: block;
+  width: 126px;
+  height: 126px;
+  content: "";
+  border-radius: 50%;
+  background: #fe8505;
+  animation: empty-orange-drift 6.4s -1.1s ease-in-out infinite;
+}
+
+.phone-screen .flat-light-art::after {
+  position: absolute;
+  z-index: 2;
+  top: 26px;
+  left: 18px;
+  display: block;
+  width: 92px;
+  height: 92px;
+  content: "";
+  border-radius: 50%;
+  background: #ffdc68;
+  animation: empty-core-float 4.8s -.7s ease-in-out infinite;
+}
+
+.phone-screen .flat-light-art .flat-light-halo {
+  position: absolute;
+  z-index: 0;
+  top: -29px;
+  left: -14px;
+  display: block;
+  width: 170px;
+  height: 170px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: rgba(254, 133, 5, 0.1);
+  transform-origin: center;
+  animation: empty-halo-breathe 5.8s ease-in-out infinite;
+}
+
+.phone-screen .flat-light-art img {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translate(12px, 2px);
+}
+
+@keyframes empty-core-float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-2px, 2px); }
+}
+
+@keyframes empty-orange-drift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(6px, -4px); }
+}
+
+@keyframes empty-halo-breathe {
+  0%, 100% { opacity: .7; transform: scale(.94); }
+  50% { opacity: 1; transform: scale(1.07); }
+}
+
+/* Device-state motion: OFF stays still; ON earns one product-specific signal. */
+.phone-screen .device-list-stack .device-tile {
+  min-height: 154px;
+  transition: background-color 240ms cubic-bezier(.16, 1, .3, 1);
+}
+
+.phone-screen .device-list-stack .device-tile.device-on {
+  background: #f5e9db;
+}
+
+.phone-screen .device-list-stack .device-open {
+  grid-template-columns: 112px minmax(0, 1fr);
+  grid-template-rows: 124px;
+  min-height: 124px;
+  gap: 18px;
+}
+
+.phone-screen .device-list-stack .device-tile-media {
+  position: relative;
+  isolation: isolate;
+  width: 112px;
+  height: 124px;
+}
+
+.phone-screen .device-list-stack .device-tile-media img {
+  position: relative;
+  z-index: 3;
+}
+
+/* Corner layout: product leads on the left; identity and control anchor the right edge. */
+.phone-screen .device-list-stack .device-tile {
+  position: relative;
+  display: block;
+}
+
+.phone-screen .device-list-stack .device-open {
+  width: 100%;
+}
+
+.phone-screen .device-list-stack .device-tile-heading {
+  align-self: start;
+  justify-self: end;
+  padding: 18px 8px 0 0;
+  text-align: right;
+}
+
+.phone-screen .device-list-stack .device-tile-heading h3 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  line-height: 1.05;
+}
+
+.phone-screen .device-list-stack .device-tile-heading p {
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.phone-screen .device-list-stack .device-tile-footer {
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
+  left: auto;
+  width: auto;
+}
+
+.device-effect {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+}
+
+.device-on .device-effect {
+  display: block;
+}
+
+.device-s601.device-on .effect-outer {
+  z-index: 0;
+  top: 0;
+  right: -14px;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: rgba(254, 133, 5, .12);
+  animation: s601-ring 4.8s ease-in-out infinite;
+}
+
+.device-s601.device-on .effect-middle {
+  z-index: 1;
+  top: 14px;
+  right: -3px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #fe8505;
+  animation: s601-orbit 5.6s -1.3s ease-in-out infinite;
+}
+
+.device-s601.device-on .effect-inner {
+  z-index: 2;
+  top: 25px;
+  right: 5px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ffdc68;
+  animation: s601-core 4.2s -.7s ease-in-out infinite;
+}
+
+.device-s602.device-on .device-effect {
+  display: none;
+}
+
+.device-s602.device-on .effect-outer {
+  z-index: 0;
+  top: 43px;
+  left: 39px;
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #e85a00;
+  opacity: .82;
+  transform-origin: center;
+  transform: rotate(-90deg) translateX(46px);
+  animation: s602-orbit 6.8s -1.7s ease-in-out infinite;
+}
+
+.device-n86.device-on .device-effect {
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.device-n86.device-on .effect-outer {
+  top: 46px;
+  left: 50px;
+  width: 22px;
+  height: 22px;
+  background: #ff4d00;
+  animation: n86-think-one 5.8s -1.2s cubic-bezier(.45, 0, .2, 1) infinite;
+}
+
+.device-n86.device-on .effect-middle {
+  top: 45px;
+  left: 49px;
+  width: 14px;
+  height: 14px;
+  background: #ff9d0a;
+  animation: n86-think-two 4.9s -.4s cubic-bezier(.45, 0, .2, 1) infinite;
+}
+
+.device-n86.device-on .effect-inner {
+  top: 57px;
+  left: 54px;
+  width: 9px;
+  height: 9px;
+  background: #ffd23f;
+  animation: n86-think-three 6.4s -2.2s cubic-bezier(.45, 0, .2, 1) infinite;
+}
+
+.n86-idea-symbol {
+  position: absolute;
+  z-index: 2;
+  top: 48px;
+  display: none;
+  width: 29px;
+  height: 29px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.device-n86.device-on .n86-idea-symbol {
+  display: block;
+}
+
+.n86-idea-symbol svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.device-n86.device-on .idea-question {
+  left: 30px;
+  color: #ff7a00;
+  animation: n86-idea-question 16s -1s cubic-bezier(.16, 1, .3, 1) infinite;
+}
+
+.device-n86.device-on .idea-exclamation {
+  left: 46px;
+  color: #f13b0a;
+  animation: n86-idea-exclamation 16s -5s cubic-bezier(.16, 1, .3, 1) infinite;
+}
+
+.device-n86.device-on .idea-heart {
+  left: 62px;
+  color: #ff5364;
+  animation: n86-idea-heart 16s -9s cubic-bezier(.16, 1, .3, 1) infinite;
+}
+
+.device-n86.device-on .idea-star {
+  left: 76px;
+  color: #ffb800;
+  animation: n86-idea-star 16s -13s cubic-bezier(.16, 1, .3, 1) infinite;
+}
+
+.device-n86.device-on .idea-heart svg,
+.device-n86.device-on .idea-star svg {
+  fill: currentColor;
+  stroke: none;
+}
+
+@keyframes s601-ring {
+  0%, 100% { opacity: .42; transform: translate(0, 1px) scale(.92); }
+  50% { opacity: .78; transform: translate(2px, -2px) scale(1.08); }
+}
+
+@keyframes s601-orbit {
+  0%, 100% { transform: translate(0, 0) scale(.95); }
+  50% { transform: translate(5px, -3px) scale(1.04); }
+}
+
+@keyframes s601-core {
+  0%, 100% { transform: translate(0, 0) scale(.92); }
+  50% { transform: translate(-3px, 4px) scale(1.08); }
+}
+
+@keyframes s602-orbit {
+  0%, 100% { opacity: .68; transform: rotate(-155deg) translateX(46px); }
+  50% { opacity: .94; transform: rotate(-25deg) translateX(46px); }
+}
+
+@keyframes n86-think-one {
+  0% { opacity: 0; transform: translate(0, 0) scale(.72); }
+  22% { opacity: .82; transform: translate(18px, -16px) scale(.92); }
+  66% { opacity: .7; transform: translate(45px, -45px) scale(1.08); }
+  100% { opacity: 0; transform: translate(72px, -76px) scale(.82); }
+}
+
+@keyframes n86-think-two {
+  0% { opacity: 0; transform: translate(0, 0) scale(.75); }
+  26% { opacity: 1; transform: translate(-17px, -13px) scale(.94); }
+  64% { opacity: .78; transform: translate(-42px, -34px) scale(1.1); }
+  100% { opacity: 0; transform: translate(-70px, -59px) scale(.84); }
+}
+
+@keyframes n86-think-three {
+  0% { opacity: 0; transform: translate(0, 0) scale(.72); }
+  24% { opacity: .96; transform: translate(20px, 10px) scale(.92); }
+  61% { opacity: .84; transform: translate(46px, 5px) scale(1.14); }
+  100% { opacity: 0; transform: translate(76px, -17px) scale(.82); }
+}
+
+@keyframes n86-idea-question {
+  0%, 6% { opacity: 0; transform: translate(0, 0) rotate(-7deg) scale(.55); }
+  9% { opacity: 0; transform: translate(-5px, -31px) rotate(-5deg) scale(.78); }
+  12% { opacity: .96; transform: translate(-8px, -47px) rotate(-3deg) scale(.96); }
+  20% { opacity: .88; transform: translate(-12px, -74px) rotate(4deg) scale(1.1); }
+  28%, 100% { opacity: 0; transform: translate(-16px, -101px) rotate(9deg) scale(.9); }
+}
+
+@keyframes n86-idea-exclamation {
+  0%, 6% { opacity: 0; transform: translate(0, 0) rotate(7deg) scale(.55); }
+  9% { opacity: 0; transform: translate(1px, -31px) rotate(5deg) scale(.78); }
+  12% { opacity: .97; transform: translate(3px, -48px) rotate(3deg) scale(.96); }
+  20% { opacity: .9; transform: translate(6px, -76px) rotate(-3deg) scale(1.1); }
+  28%, 100% { opacity: 0; transform: translate(10px, -103px) rotate(-8deg) scale(.9); }
+}
+
+@keyframes n86-idea-heart {
+  0%, 6% { opacity: 0; transform: translate(0, 0) rotate(-5deg) scale(.5); }
+  9% { opacity: 0; transform: translate(5px, -31px) rotate(-4deg) scale(.75); }
+  12% { opacity: .96; transform: translate(10px, -47px) rotate(-2deg) scale(.94); }
+  20% { opacity: .9; transform: translate(15px, -75px) rotate(4deg) scale(1.08); }
+  28%, 100% { opacity: 0; transform: translate(20px, -102px) rotate(8deg) scale(.88); }
+}
+
+@keyframes n86-idea-star {
+  0%, 6% { opacity: 0; transform: translate(0, 0) rotate(-10deg) scale(.5); }
+  9% { opacity: 0; transform: translate(6px, -31px) rotate(-4deg) scale(.75); }
+  12% { opacity: .97; transform: translate(12px, -48px) rotate(2deg) scale(.94); }
+  20% { opacity: .9; transform: translate(18px, -76px) rotate(11deg) scale(1.1); }
+  28%, 100% { opacity: 0; transform: translate(24px, -104px) rotate(18deg) scale(.88); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .phone-screen .flat-light-art .flat-light-halo,
+  .phone-screen .flat-light-art::before,
+  .phone-screen .flat-light-art::after,
+  .phone-screen .device-list-stack .device-tile,
+  .device-on .device-effect,
+  .device-n86.device-on .n86-idea-symbol {
+    transition: none;
+    animation: none;
+  }
+
+  .device-n86.device-on .n86-idea-symbol {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 190" role="img" aria-labelledby="title desc">
+  <title id="title">YUI S602</title>
+  <desc id="desc">A simplified circular YUI S602 speaker with a light body and a narrow orange pedestal.</desc>
+  <circle cx="120" cy="92" r="70" fill="#FFFDF8"/>
+  <rect x="86" y="147" width="68" height="22" rx="11" fill="#FE8505"/>
+  <g fill="#CCC7C1" transform="translate(10 -5) scale(.82)" aria-hidden="true">
+    <path d="M111 137h5.2l4.2 6.7 4.3-6.7h5.1l-7.2 10.5v6.5h-4.5v-6.5L111 137Z"/>
+    <path d="M143 137h4.5v9.5c0 5-2.9 8-7.9 8s-7.9-3-7.9-8V137h4.5v9.2c0 2.7 1.1 4.2 3.4 4.2s3.4-1.5 3.4-4.2V137Z"/>
+    <rect x="152" y="137" width="4.5" height="17" rx="2.25"/>
+  </g>
+</svg>

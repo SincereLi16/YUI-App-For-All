@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 190" role="img" aria-labelledby="title desc">
+  <title id="title">YUI N86</title>
+  <desc id="desc">A simplified tall YUI N86 speaker with a divided ivory body and two expressive round eyes.</desc>
+  <rect x="64" y="16" width="112" height="158" rx="7" fill="#FFF9F0"/>
+  <path d="M67 27a5 5 0 0 1 5-5h96a5 5 0 0 1 5 5v55H67V27Z" fill="#F3F0EB" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="64" y="81" width="112" height="2" fill="#F6EEE5"/>
+  <circle cx="96" cy="52" r="20" fill="#FFFDF8"/>
+  <circle cx="144" cy="52" r="20" fill="#FFFDF8"/>
+  <circle cx="101" cy="54" r="8" fill="#2E2A26"/>
+  <circle cx="149" cy="54" r="8" fill="#2E2A26"/>
+  <circle cx="104" cy="51" r="2" fill="#FFFDF8" opacity=".82"/>
+  <circle cx="152" cy="51" r="2" fill="#FFFDF8" opacity=".82"/>
+  <g fill="#D0CAC3" transform="translate(2 48) scale(.7)" aria-hidden="true">
+    <path d="M111 137h5.2l4.2 6.7 4.3-6.7h5.1l-7.2 10.5v6.5h-4.5v-6.5L111 137Z"/>
+    <path d="M143 137h4.5v9.5c0 5-2.9 8-7.9 8s-7.9-3-7.9-8V137h4.5v9.2c0 2.7 1.1 4.2 3.4 4.2s3.4-1.5 3.4-4.2V137Z"/>
+    <rect x="152" y="137" width="4.5" height="17" rx="2.25"/>
+  </g>
+  <rect x="147" y="145" width="16" height="10" rx="5" fill="#FE8505" aria-hidden="true"/>
+</svg>

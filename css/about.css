@@ -1,0 +1,23 @@
+.about-page .about-brand {
+  padding: 72px 16px 0;
+  text-align: left;
+}
+.about-brand h3 {
+  margin: 0 0 20px;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--orange, #fe8505);
+  line-height: 1.1;
+  letter-spacing: .08em;
+}
+.about-brand p { margin: 0; max-width: 250px; font-size: 19px; font-weight: 500; line-height: 1.55; color: #514c45; }
+.about-version { display: block; margin-top: 18px; font-size: 12px; letter-spacing: .02em; color: #756C60; }
+.about-page .about-policy-links { margin-top: 88px; }
+.legal-copy { padding: 44px 8px; }
+.legal-copy h3 { margin: 0 0 16px; font-size: 22px; }
+.legal-copy p { margin: 0; line-height: 1.8; color: #756C60; }
+@media (max-height: 700px) {
+  .about-page .about-brand { padding-top: 44px; }
+  .about-page .about-policy-links { margin-top: 48px; }
+}

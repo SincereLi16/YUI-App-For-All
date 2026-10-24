@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 288" fill="none">
+  <title>Reading chair and round side table</title>
+  <path d="m63 231-8 32m104-32 8 32" stroke="#CABA9E" stroke-width="10" stroke-linecap="round"/>
+  <rect x="40" y="66" width="136" height="154" rx="46" fill="#AAB79A"/>
+  <rect x="53" y="79" width="109" height="108" rx="34" fill="#BBC6AE"/>
+  <rect x="54" y="166" width="109" height="31" rx="15" fill="#CDD4C2"/>
+  <rect x="36" y="186" width="144" height="51" rx="20" fill="#AAB79A"/>
+  <rect x="30" y="152" width="27" height="68" rx="13.5" fill="#99A889"/>
+  <rect x="158" y="152" width="27" height="68" rx="13.5" fill="#99A889"/>
+  <path d="m223 209-10 54m76-54 10 54" stroke="#D1BD9B" stroke-width="10" stroke-linecap="round"/>
+  <rect x="248" y="211" width="9" height="51" rx="4.5" fill="#DECCAF"/>
+  <rect x="193" y="195" width="126" height="20" rx="10" fill="#D6C3A3"/>
+  <ellipse cx="256" cy="195" rx="63" ry="14" fill="#E8D9BF"/>
+</svg>

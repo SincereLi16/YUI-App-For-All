@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 288" fill="none">
+  <title>S602 minimal illustrated home corner</title>
+  <!-- Quiet flat colour shapes, matching the existing product artwork. -->
+  <rect x="39" y="253" width="11" height="22" rx="5.5" fill="#D6C6AE"/>
+  <rect x="310" y="253" width="11" height="22" rx="5.5" fill="#D6C6AE"/>
+  <rect x="30" y="211" width="300" height="48" rx="9" fill="#E5D7C1"/>
+  <path d="M180 227v24" stroke="#D5C4A9" stroke-width="2" stroke-linecap="round"/>
+  <rect x="152" y="229" width="13" height="4" rx="2" fill="#C7B69D"/>
+  <rect x="195" y="229" width="13" height="4" rx="2" fill="#C7B69D"/>
+  <rect x="22" y="207" width="316" height="12" rx="6" fill="#D9C6A8"/>
+  <g transform="translate(-16 0)">
+  <g class="scene-leaves scene-leaves-602">
+  <path d="M94 187v-35" stroke="#718D61" stroke-width="3" stroke-linecap="round"/>
+  <path d="M94 174c-16 0-23-9-21-20 13-1 22 8 21 20Z" fill="#8AA675"/>
+  <path d="M94 164c0-15 8-24 20-23 2 12-6 23-20 23Z" fill="#6F925C"/>
+  <path d="M94 182c0-12 8-19 19-17 0 11-8 17-19 17Z" fill="#A1B68A"/>
+  </g>
+  <path d="M78 184h32l-3 17a7 7 0 0 1-7 6H88a7 7 0 0 1-7-6l-3-17Z" fill="#FFFDF8"/>
+  <rect x="76" y="181" width="36" height="7" rx="3.5" fill="#E4DECF"/>
+  </g>
+</svg>

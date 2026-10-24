@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 288" fill="none">
+  <title>Close-up bedside scene with foreground nightstand and cropped bedding</title>
+  <!-- Broad headboard behind the foreground cabinet, continuing out of frame. -->
+  <path d="M143 288V77c0-28 14-43 43-43h203v254H143Z" fill="#C9B5A2"/>
+  <path d="M158 288V76c0-25 12-37 36-37h195v249H158Z" fill="#D5C2AF"/>
+  <!-- Only the near edge of mattress and pillow enters from the right. -->
+  <path d="M267 175h122v113H241v-78c0-20 8-35 26-35Z" fill="#E4D8C5"/>
+  <path d="m250 122 18-16 121-7v84l-107 9-27-18-14-30 9-22Z" fill="#FFFDF8"/>
+  <path d="m250 122 16 19-11 33-14-30 9-22Z" fill="#EFE7D8"/>
+  <path d="m266 141 16 51 107-9v-16l-105 9-18-35Z" fill="#F6F0E5"/>
+  <path d="M302 201h87v87H261l12-51c4-19 13-31 29-36Z" fill="#C8C9B6"/>
+  <path d="m302 201-13 37-5 36" stroke="#DADACB" stroke-width="5" stroke-linecap="round"/>
+  <!-- Large bedside cabinet: shallow top and a quiet single drawer. -->
+  <path d="m13 176 179-10 24 13-179 10-24-13Z" fill="#D9C6A8"/>
+  <path d="M13 176 37 189v99H13V176Z" fill="#CAB695"/>
+  <path d="m37 189 179-10v109H37V189Z" fill="#E5D7C1"/>
+  <path d="m49 199 155-9v62H49v-53Z" fill="#EDE2D0"/>
+  <rect x="113" y="218" width="25" height="4" rx="2" fill="#C7B69D"/>
+</svg>

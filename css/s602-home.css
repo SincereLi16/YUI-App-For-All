@@ -1,0 +1,188 @@
+/* S602 only: independently composited room, light and existing product art. */
+/* Shared geometry; model modifiers keep each domestic vignette distinct. */
+.s602-home-scene.s601-bedroom { margin-left: 0; margin-right: 0; overflow: visible; }
+.s602-home-scene.n86-desktop { margin-left: 0; margin-right: 0; }
+.n86-desktop .reading-product { width: 91.8px; height: 72.675px; left: 16%; top: 136.445px; }
+.s602-tabletop .s602-home-light { left: calc(50% - 63px); }
+.s601-bedroom .s602-home-light { left: 26%; top: -15px; width: 168px; height: 152px; }
+.s601-bedroom .s602-home-light circle:last-child { cx: 109px; cy: 101px; }
+.bedroom-product { position: absolute; z-index: 3; width: 61px; height: 48.29px; left: 39%; top: 92.22px; transform: translateX(-50%); }
+.reading-product { position: absolute; z-index: 3; width: 170px; height: 134.58px; left: 71.1%; top: 72px; transform: translateX(-50%); overflow: visible; }
+.reading-gaze { transform: translate(var(--gaze-x, 0px), var(--gaze-y, 0px)); transition: transform 180ms ease-out; }
+.reading-blink { transform-origin: 125px 54px; animation: reading-blink 5.4s ease-in-out infinite; animation-play-state: paused; }
+.is-lit.is-scene-visible .reading-blink { animation-play-state: running; }
+@keyframes reading-blink { 0%, 43%, 49%, 100% { transform: scaleY(1); } 46% { transform: scaleY(.12); } }
+.s602-home-scene {
+  position: relative;
+  isolation: isolate;
+  height: 288px;
+  margin: 8px -20px 24px;
+  overflow: hidden;
+  background: transparent;
+}
+.s602-home-background {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.s602-home-light {
+  position: absolute;
+  width: 210px;
+  height: 190px;
+  left: calc(50% - 103px);
+  top: 14px;
+  opacity: 0;
+  transform: scale(.9);
+  transition: opacity 750ms ease-out, transform 900ms cubic-bezier(.16,1,.3,1);
+}
+.s602-home-light svg { display: block; width: 100%; height: 100%; }
+.s602-home-light svg {
+  transform-origin: 50% 65%;
+  animation: s602-light-breathe 6s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.s602-home-light circle:last-child {
+  animation: s602-light-drift 8s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.s602-home-scene.is-lit.is-scene-visible .s602-home-light svg,
+.s602-home-scene.is-lit.is-scene-visible .s602-home-light circle:last-child {
+  animation-play-state: running;
+}
+@keyframes s602-light-breathe {
+  0%, 100% { transform: scale(.97); opacity: .88; }
+  50% { transform: scale(1.025); opacity: 1; }
+}
+@keyframes s602-light-drift {
+  0%, 100% { transform: translate(-3px, -2px); }
+  50% { transform: translate(5px, 4px); }
+}
+.s602-home-scene.is-lit .s602-home-light {
+  opacity: var(--scene-intensity, .64);
+  transform: scale(1);
+}
+.s602-home-product {
+  position: absolute;
+  z-index: 3;
+  width: 88.8px;
+  height: 70.3px;
+  left: 78.3333%;
+  top: 144.47px;
+  transform: translateX(-50%);
+}
+.s602-home-contact {
+  position: absolute;
+  z-index: 2;
+  width: 29px;
+  height: 6px;
+  left: 78.3333%;
+  top: 204px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: rgb(125 96 54 / 12%);
+}
+/* Quiet ambient life; the pot, furniture and product anchors stay still. */
+.scene-leaves {
+  transform-box: view-box;
+  animation: scene-leaf-sway 6s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.scene-leaves-601 { transform-origin: 53px 115px; }
+.scene-leaves-602 { transform-origin: 94px 184px; animation-duration: 5.4s; animation-delay: -1.6s; }
+.scene-cat-head {
+  transform-box: view-box;
+  transform-origin: 264px 168px;
+  animation: scene-cat-doze 4.8s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.scene-sleep-z {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: scene-sleep 4.5s ease-out infinite;
+  animation-play-state: paused;
+}
+.is-scene-visible .scene-leaves,
+.is-scene-visible .scene-cat-head,
+.is-scene-visible .scene-sleep-z { animation-play-state: running; }
+@keyframes scene-leaf-sway {
+  0%, 100% { transform: rotate(-4.5deg); }
+  50% { transform: rotate(5.5deg); }
+}
+@keyframes scene-cat-doze {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(1.3px) rotate(2deg); }
+}
+@keyframes scene-sleep {
+  0%, 65%, 100% { opacity: 0; transform: translate(0, 0) scale(.8); }
+  12% { opacity: .7; transform: translate(2px, -5px) scale(1); }
+  48% { opacity: .5; transform: translate(12px, -22px) scale(1.35); }
+  64% { opacity: 0; transform: translate(17px, -30px) scale(1.5); }
+}
+.scene-ideas {
+  position: absolute; z-index: 4; left: 16%; top: 145px;
+  pointer-events: none;
+}
+.scene-idea {
+  position: absolute; left: -10px; top: -8px; width: 20px; height: 20px;
+  opacity: 0; fill: none; stroke: currentColor; stroke-width: 2.3;
+  stroke-linecap: round; stroke-linejoin: round; color: #FF7A00;
+  animation: scene-idea-pop 12s cubic-bezier(.16, 1, .3, 1) infinite;
+  animation-play-state: paused;
+}
+.scene-idea-heart { color: #FF5364; fill: currentColor; stroke: none; animation-delay: 4s; }
+.scene-idea-star { color: #FFB800; fill: currentColor; stroke: none; animation-delay: 8s; }
+.is-lit.is-scene-visible .scene-idea { animation-play-state: running; }
+.scene-ideas { transition: opacity 180ms ease-out; }
+.is-peeking .scene-ideas { opacity: 0; }
+.is-peeking.is-lit.is-scene-visible .scene-idea { animation-play-state: paused; }
+.is-peeking .reading-blink { animation: none; }
+.is-peeking .reading-gaze { transform: translate(5px, -5px); }
+.device-list-stack .tile-n86-product {
+  position: relative; z-index: 3; display: block;
+  width: 100%; height: 100%; transform: scale(1.35); transform-origin: center;
+}
+.device-n86.device-on.is-scene-visible .reading-blink { animation-play-state: running; }
+.device-n86 .n86-idea-symbol, .device-n86 .device-effect { transition: opacity 180ms ease-out; }
+.device-n86.is-peeking .n86-idea-symbol,
+.device-n86.is-peeking .device-effect { visibility: hidden; animation-play-state: paused; }
+.device-n86:not(.is-scene-visible) .n86-idea-symbol,
+.device-n86:not(.is-scene-visible) .device-effect { animation-play-state: paused; }
+@keyframes scene-idea-pop {
+  0%, 30%, 100% { opacity: 0; transform: translate(0, 0) scale(.35) rotate(-12deg); }
+  5% { opacity: 1; transform: translate(-5px, -18px) scale(1.12) rotate(6deg); }
+  10%, 18% { opacity: 1; transform: translate(-5px, -20px) scale(1) rotate(0); }
+  29% { opacity: 0; transform: translate(-1px, -30px) scale(.9) rotate(5deg); }
+}
+/* Keep the live eyes above the Bluetooth water-fill layers. */
+.connection-eye-look {
+  animation: connection-eye-look 3.6s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.connection-eye-blink {
+  transform-origin: 125px 54px;
+  animation: reading-blink 3s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.is-eye-visible:not(.is-connected):not(.is-failed) .connection-eye-look,
+.is-eye-visible:not(.is-connected):not(.is-failed) .connection-eye-blink { animation-play-state: running; }
+@keyframes connection-eye-look {
+  0%, 100% { transform: translate(0, 0); }
+  22%, 36% { transform: translate(-5px, -2px); }
+  62%, 78% { transform: translate(4px, -3px); }
+}
+.connection-active-art .tile-n86-product {
+  position: absolute; z-index: 3; width: 120px; height: 95px; left: -4px; top: 14.5px;
+}
+.is-eye-visible .device-on .reading-blink { animation-play-state: running; }
+@media (prefers-reduced-motion: reduce) {
+  .connection-eye-look, .connection-eye-blink { animation: none; }
+  .scene-leaves, .scene-cat-head, .scene-sleep-z, .scene-idea { animation: none; }
+  .reading-blink { animation: none; }
+  .reading-gaze { transition: none; }
+  .s602-home-light { transition: opacity 200ms ease-out; }
+  .s602-home-light svg, .s602-home-light circle:last-child { animation: none; }
+}
